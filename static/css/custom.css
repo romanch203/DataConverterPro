@@ -1,0 +1,202 @@
+/* Custom styles for File Converter API */
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+/* File upload styling */
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Progress bar animation */
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+/* Result cards */
+.result-card {
+    border-left: 4px solid var(--bs-success);
+    background: rgba(25, 135, 84, 0.1);
+}
+
+.result-card.error {
+    border-left-color: var(--bs-danger);
+    background: rgba(220, 53, 69, 0.1);
+}
+
+/* Status indicators */
+.status-online {
+    color: var(--bs-success);
+}
+
+.status-offline {
+    color: var(--bs-danger);
+}
+
+/* Code blocks */
+pre {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+code {
+    font-size: 0.875em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Loading spinner */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Badge spacing */
+.badge {
+    margin: 0.125rem;
+}
+
+/* Table responsiveness */
+.table-responsive {
+    border-radius: 0.375rem;
+}
+
+/* Alert customization */
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Navigation active state */
+.nav-link.active {
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 0.375rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+}
+
+/* Sticky positioning helper */
+.position-sticky {
+    top: 1.5rem !important;
+}
+
+/* File drop zone styling */
+.file-drop-zone {
+    border: 2px dashed var(--bs-secondary);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.file-drop-zone:hover,
+.file-drop-zone.dragover {
+    border-color: var(--bs-primary);
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Quality metrics styling */
+.quality-metric {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin: 0.125rem;
+}
+
+.quality-metric.high {
+    background: rgba(25, 135, 84, 0.1);
+    color: var(--bs-success);
+}
+
+.quality-metric.medium {
+    background: rgba(255, 193, 7, 0.1);
+    color: var(--bs-warning);
+}
+
+.quality-metric.low {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--bs-danger);
+}
+
+/* Download button styling */
+.download-btn {
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+/* API documentation specific styles */
+#api-docs .card-header {
+    background: rgba(13, 110, 253, 0.1);
+    border-bottom: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+/* Smooth animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Success/Error states */
+.success-state {
+    border-left: 4px solid var(--bs-success);
+    background: linear-gradient(90deg, rgba(25, 135, 84, 0.1) 0%, transparent 100%);
+}
+
+.error-state {
+    border-left: 4px solid var(--bs-danger);
+    background: linear-gradient(90deg, rgba(220, 53, 69, 0.1) 0%, transparent 100%);
+}
+
+.warning-state {
+    border-left: 4px solid var(--bs-warning);
+    background: linear-gradient(90deg, rgba(255, 193, 7, 0.1) 0%, transparent 100%);
+}
